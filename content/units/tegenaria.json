@@ -1,0 +1,58 @@
+{
+  "localizedName": "Tegenaria",
+  "description": "  ",
+  "details": "any crawler will be...",
+  "research": {
+  "parent": "crawler",
+  "requirements": [
+  "coal/150",
+  "titanium/200",
+  "silicon/250"
+  ]
+  },
+  "commandLimit": 8,
+  "type": "legs",
+	"speed": 1,
+	"hitSize": 14,
+	"health": 300,
+	"faceTarget": true,
+	"armor": 5,
+	"drag": 1,
+	"range": 40,
+	"targetAir": true,
+	"rotateSpeed": 5,
+  "legTrns": 0.6,
+	"legCount": 4,
+	"legMoveSpace": 1.4,
+	"legLength": 15,
+    "legBaseOffset": 2,
+	"visualElevation": 0.65,
+	"allowLegStep": true,
+	"hovering": true,
+	"immunities": [
+		"sapped"
+	],
+	"weapons": [
+    {
+      "name": "bomb",
+        "reload": 30,
+        "shootCone": 180,
+        "shootEffect": "sapExplosion",
+        "ejectEffect": "none",
+        "shootSound": "explosion",
+        "bullet": {
+        "type": "BombBulletType",
+        "lifetime": 5,
+        "shootEffect": "sapExplosion",
+        "speed": 1,
+        "splashDamageRadius": 48,
+        "instantDisappear": true,
+        "splashDamage": 130,
+        "status" : "sapped",
+        "killShooter": true,
+        "hittable": false,
+        "collidesAir": true
+         }
+      }
+	]
+}

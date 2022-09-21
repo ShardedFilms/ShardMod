@@ -1,0 +1,16 @@
+{
+  "type": "Conveyor",
+  "localizedName": "Osmium Conveyor",
+  "description": "Faster than titanium Conveyor!",
+"health": 80,
+"size": 1,
+"speed": 0.15,
+"displayedSpeed": 20,
+"requirements": [
+  "lead/2",
+  "titanium/2",
+  "osmium/1"
+],
+"category": "distribution",
+"research": "titanium-conveyor"
+}
