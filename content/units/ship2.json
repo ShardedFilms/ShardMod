@@ -127,7 +127,7 @@
               "dest": [
                   {
                       "type": "ShootSpread",
-                      "shotDelay": 6,
+                      "shotDelay": 3,
                       "shots": 37,
                       "spread": 10
                     }
@@ -135,7 +135,6 @@
           },
             "bullet": {
             "type": "BasicBulletType",
-            "spin": 3,
             "width": 21,
             "height": 18,
             "sprite": "sharded-triarrow",
@@ -143,7 +142,7 @@
             "backColor": "ff69b4ff",
             "lifetime": 240,
             "hitSize": 6,
-            "speed": 5,
+            "speed": 3,
             "damage": 81,
             "collidesGround": false,
             "shrinkY": 0,
