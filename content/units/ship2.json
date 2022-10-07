@@ -102,24 +102,59 @@
           "statusDuration": 100,
           "shootEffect": "none"
           },
-          "hitEffect": {
-          "type": "ParticleEffect",
-          "line": true,
-          "particles": 7,
-          "lifetime": 20,
-          "offset": 50,
-          "length": 55,
-          "cone": -360,
-          "lenFrom": 6,
-          "lenTo": 0,
-          "colorFrom": "ffd37f",
-          "colorTo": "ffffff"
           },
-          "trailColor": "ffd37f",
-          "trailParam": 6,
-          "trailLength": 0,
-          "trailWidth": 3
-          }
+
+          {
+            "name": "shooter",
+            "reload": 120,
+            "mirror": false,
+            "x": 0,
+            "y": 4,
+            "shootY": 3,
+            "recoil": 2,
+            "shake": 1,
+            "rotate": false,
+            "shootSound": "shot-basic",
+            "shootCone": 45,
+            "shoot": {
+              "type": "ShootMulti",
+              "source": {
+                  "type": "ShootSpread",
+                  "shotDelay": 0,
+                  "shots": 2,
+                  "spread": 90
+                },
+              "dest": [
+                  {
+                      "type": "ShootSpread",
+                      "shotDelay": 6,
+                      "shots": 37,
+                      "spread": 10
+                    }
+              ]
+          },
+            "bullet": {
+            "type": "BasicBulletType",
+            "spin": 3,
+            "width": 21,
+            "height": 18,
+            "sprite": "sharded-triarrow",
+            "frontColor": "ffffff",
+            "backColor": "ff69b4ff",
+            "lifetime": 240,
+            "hitSize": 6,
+            "speed": 5,
+            "damage": 81,
+            "collidesGround": false,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "powerDamageScl": 0.3,
+            "powerSclDecrease": 0.1,
+            "unitDamageScl": 0.3,
+            "statusDuration": 100,
+            "shootEffect": "none"
+            },
+            }
           
           ]
       }
