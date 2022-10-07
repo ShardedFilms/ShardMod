@@ -1,26 +1,26 @@
        {
-        "localizedName": "Blitz",
-        "description": "dodging bullets? think of bhm.",
+        "localizedName": "Parent",
+        "description": "Just think again. how i did?",
         "research": {
         "requirements": [
         "silicon/20000"
         ]
         },
         "type": "flying",
-          "speed": 3.6,
+          "speed": 0.9,
           "lowAltitude": true,
-          "hitSize": 10,
-          "health": 80,
+          "hitSize": 48,
+          "health": 700,
           "accel": 0.1,
           "faceTarget": true,
           "drag": 0.05,
           "engineOffset": 0,
           "engineSize": 0,
-          "range": 320,
+          "range": 480,
           "targetAir": true,
           "tarrgetGround": false,
           "outlineColor": "00000000",
-          "rotateSpeed": 5,
+          "rotateSpeed": 3,
           "flying": true,
           "parts":[
             {
@@ -28,18 +28,18 @@
               "hollow": true,
               "circle": false,
               "sides": 6,
-              "rotateSpeed": 2,
+              "rotateSpeed": 1,
               "layer": 110,
-              "color": "d99f6b88",
-              "stroke": 2,
-              "strokeTo": 2,
-              "radiusTo": 12,
-              "radius": 12
+              "color": "8ca9e888",
+              "stroke": 3,
+              "strokeTo": 3,
+              "radiusTo": 32,
+              "radius": 32
               }],
           "weapons": [
               {
           "name": "shooter",
-          "reload": 30,
+          "reload": 120,
           "mirror": false,
           "x": 0,
           "y": -1,
@@ -52,16 +52,16 @@
           "shoot": {
             "type": "ShootMulti",
             "source": {
-                            "type": "ShootAlternate",
-                            "shotDelay": 3,
-                            "shots": 3,
-                            "spread": 0
-                          },
+                "type": "ShootAlternate",
+                "shotDelay": 3,
+                "shots": 12,
+                "spread": 0
+              },
             "dest": [
                 {
                     "type": "ShootSpread",
                     "shotDelay": 0,
-                    "shots": 3,
+                    "shots": 5,
                     "spread": 15
                   }
             ]
@@ -72,9 +72,9 @@
           "height": 18,
           "sprite": "sharded-triarrow",
           "frontColor": "ffffff",
-          "backColor": "4169e1ff",
-          "lifetime": 180,
-          "speed": 4,
+          "backColor": "ff69b4ff",
+          "lifetime": 240,
+          "speed": 3,
           "damage": 81,
           "collidesGround": false,
           "shrinkY": 0,

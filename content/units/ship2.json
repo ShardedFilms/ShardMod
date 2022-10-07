@@ -1,26 +1,28 @@
        {
-        "localizedName": "Blitz",
-        "description": "dodging bullets? think of bhm.",
+        "localizedName": "parser",
+        "description": "Now comes the boss'd",
         "research": {
         "requirements": [
         "silicon/20000"
         ]
         },
         "type": "flying",
-          "speed": 3.6,
+          "speed": 0.7,
           "lowAltitude": true,
-          "hitSize": 10,
-          "health": 80,
+          "hitSize": 72,
+          "health": 6000,
           "accel": 0.1,
+          "createWreck" : true,
+          "createScorch" : false,
           "faceTarget": true,
           "drag": 0.05,
           "engineOffset": 0,
           "engineSize": 0,
-          "range": 320,
+          "range": 480,
           "targetAir": true,
           "tarrgetGround": false,
           "outlineColor": "00000000",
-          "rotateSpeed": 5,
+          "rotateSpeed": 2,
           "flying": true,
           "parts":[
             {
@@ -28,14 +30,27 @@
               "hollow": true,
               "circle": false,
               "sides": 6,
-              "rotateSpeed": 2,
+              "rotateSpeed": 1,
               "layer": 110,
-              "color": "d99f6b88",
-              "stroke": 2,
-              "strokeTo": 2,
-              "radiusTo": 12,
-              "radius": 12
-              }],
+              "color": "fc81ddaa",
+              "stroke": 4,
+              "strokeTo": 4,
+              "radiusTo": 56,
+              "radius": 56
+              },
+              {
+                "type": "shapePart",
+                "hollow": true,
+                "circle": false,
+                "sides": 6,
+                "rotateSpeed": -1,
+                "layer": 110,
+                "color": "ffbdd4aa",
+                "stroke": 4,
+                "strokeTo": 4,
+                "radiusTo": 56,
+                "radius": 56
+                }],
           "weapons": [
               {
           "name": "shooter",
@@ -52,28 +67,30 @@
           "shoot": {
             "type": "ShootMulti",
             "source": {
-                            "type": "ShootAlternate",
-                            "shotDelay": 3,
-                            "shots": 3,
-                            "spread": 0
-                          },
+                "type": "ShootSpread",
+                "shotDelay": 0,
+                "shots": 5,
+                "spread": 1
+              },
             "dest": [
                 {
                     "type": "ShootSpread",
                     "shotDelay": 0,
-                    "shots": 3,
-                    "spread": 15
+                    "shots": 9,
+                    "spread": 10
                   }
             ]
         },
           "bullet": {
           "type": "BasicBulletType",
-          "width": 21,
-          "height": 18,
-          "sprite": "sharded-triarrow",
+          "spin": 3,
+          "width": 24,
+          "height": 24,
+          "sprite": "sharded-ball",
           "frontColor": "ffffff",
-          "backColor": "4169e1ff",
-          "lifetime": 180,
+          "backColor": "ff69b4ff",
+          "lifetime": 240,
+          "hitSize": 6,
           "speed": 4,
           "damage": 81,
           "collidesGround": false,
