@@ -1,28 +1,26 @@
        {
-        "localizedName": "parser",
-        "description": "Now comes the boss'd",
+        "localizedName": "Blitz",
+        "description": "dodging bullets? think of bhm.",
         "research": {
         "requirements": [
         "silicon/20000"
         ]
         },
         "type": "flying",
-          "speed": 0.7,
+          "speed": 2.8,
           "lowAltitude": true,
-          "hitSize": 72,
-          "health": 6000,
+          "hitSize": 14,
+          "health": 240,
           "accel": 0.1,
-          "createWreck" : true,
-          "createScorch" : false,
           "faceTarget": true,
           "drag": 0.05,
           "engineOffset": 0,
           "engineSize": 0,
-          "range": 480,
+          "range": 320,
           "targetAir": true,
           "tarrgetGround": false,
           "outlineColor": "00000000",
-          "rotateSpeed": 2,
+          "rotateSpeed": 5,
           "flying": true,
           "parts":[
             {
@@ -30,27 +28,14 @@
               "hollow": true,
               "circle": false,
               "sides": 6,
-              "rotateSpeed": 1,
+              "rotateSpeed": 2,
               "layer": 110,
-              "color": "fc81ddaa",
-              "stroke": 4,
-              "strokeTo": 4,
-              "radiusTo": 56,
-              "radius": 56
-              },
-              {
-                "type": "shapePart",
-                "hollow": true,
-                "circle": false,
-                "sides": 6,
-                "rotateSpeed": -1,
-                "layer": 110,
-                "color": "ffbdd4aa",
-                "stroke": 4,
-                "strokeTo": 4,
-                "radiusTo": 56,
-                "radius": 56
-                }],
+              "color": "d99f6b88",
+              "stroke": 2,
+              "strokeTo": 2,
+              "radiusTo": 16,
+              "radius": 16
+              }],
           "weapons": [
               {
           "name": "shooter",
@@ -61,37 +46,35 @@
           "shootY": 3,
           "recoil": 2,
           "shake": 1,
-          "rotate": false,
+          "rotate": true,
           "shootSound": "shot-basic",
           "shootCone": 45,
           "shoot": {
             "type": "ShootMulti",
             "source": {
-                "type": "ShootSpread",
-                "shotDelay": 0,
-                "shots": 5,
-                "spread": 1
-              },
+                            "type": "ShootAlternate",
+                            "shotDelay": 9,
+                            "shots": 2,
+                            "spread": 0
+                          },
             "dest": [
                 {
                     "type": "ShootSpread",
                     "shotDelay": 0,
-                    "shots": 9,
-                    "spread": 10
+                    "shots": 13,
+                    "spread": 15
                   }
             ]
         },
           "bullet": {
           "type": "BasicBulletType",
-          "spin": 3,
-          "width": 24,
-          "height": 24,
-          "sprite": "sharded-ball",
+          "width": 21,
+          "height": 18,
+          "sprite": "sharded-triarrow",
           "frontColor": "ffffff",
           "backColor": "ff69b4ff",
-          "lifetime": 240,
-          "hitSize": 6,
-          "speed": 4,
+          "lifetime": 180,
+          "speed": 3,
           "damage": 81,
           "collidesGround": false,
           "shrinkY": 0,
@@ -101,35 +84,52 @@
           "unitDamageScl": 0.3,
           "statusDuration": 100,
           "shootEffect": "none"
-          }
           },
-
+          "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 7,
+          "lifetime": 20,
+          "offset": 50,
+          "length": 55,
+          "cone": -360,
+          "lenFrom": 6,
+          "lenTo": 0,
+          "colorFrom": "ffd37f",
+          "colorTo": "ffffff"
+          },
+          "trailColor": "ffd37f",
+          "trailParam": 6,
+          "trailLength": 0,
+          "trailWidth": 3
+          },
           {
             "name": "shooter",
-            "reload": 120,
+            "reload": 30,
             "mirror": false,
             "x": 0,
-            "y": 4,
+            "y": -1,
             "shootY": 3,
             "recoil": 2,
             "shake": 1,
-            "rotate": false,
+            "rotate": true,
             "shootSound": "shot-basic",
             "shootCone": 45,
             "shoot": {
               "type": "ShootMulti",
               "source": {
-                  "type": "ShootSpread",
-                  "shotDelay": 0,
-                  "shots": 2,
-                  "spread": 90
-                },
+                              "type": "ShootAlternate",
+                              "shotDelay": 9,
+                              "shots": 2,
+                              "spread": 0
+                            },
               "dest": [
                   {
-                      "type": "ShootSpread",
-                      "shotDelay": 3,
-                      "shots": 37,
-                      "spread": 10
+                      "type": "ShootAlternate",
+                      "shotDelay": 0,
+                      "shots": 2,
+                      "spread": 9,
+                      "barrels": 2
                     }
               ]
           },
@@ -140,9 +140,8 @@
             "sprite": "sharded-triarrow",
             "frontColor": "ffffff",
             "backColor": "ff69b4ff",
-            "lifetime": 240,
-            "hitSize": 4,
-            "speed": 3,
+            "lifetime": 180,
+            "speed": 6,
             "damage": 81,
             "collidesGround": false,
             "shrinkY": 0,
@@ -152,7 +151,24 @@
             "unitDamageScl": 0.3,
             "statusDuration": 100,
             "shootEffect": "none"
-            }
+            },
+            "hitEffect": {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 7,
+            "lifetime": 20,
+            "offset": 50,
+            "length": 55,
+            "cone": -360,
+            "lenFrom": 6,
+            "lenTo": 0,
+            "colorFrom": "ffd37f",
+            "colorTo": "ffffff"
+            },
+            "trailColor": "ffd37f",
+            "trailParam": 6,
+            "trailLength": 0,
+            "trailWidth": 3
             }
           
           ]

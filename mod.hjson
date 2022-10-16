@@ -2,5 +2,6 @@ name: "sharded"
 displayName: "ShardMod"
 author: "[accent]Sharded[]"
 description: "this mod only for add some of my content that wip."
-version: "[blue]1.1 b24 []"
-minGameVersion: 136
+subtitle: "Bullet Hell Mindustry   子弹地狱思维"
+version: "[blue]1.1 b118 []"
+minGameVersion: 139

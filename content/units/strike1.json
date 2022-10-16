@@ -7,10 +7,10 @@
         ]
         },
         "type": "flying",
-          "speed": 3.6,
+          "speed": 2.8,
           "lowAltitude": true,
           "hitSize": 10,
-          "health": 80,
+          "health": 240,
           "accel": 0.1,
           "faceTarget": true,
           "drag": 0.05,
@@ -46,7 +46,7 @@
           "shootY": 3,
           "recoil": 2,
           "shake": 1,
-          "rotate": false,
+          "rotate": true,
           "shootSound": "shot-basic",
           "shootCone": 45,
           "shoot": {
@@ -54,14 +54,14 @@
             "source": {
                             "type": "ShootAlternate",
                             "shotDelay": 3,
-                            "shots": 3,
+                            "shots": 2,
                             "spread": 0
                           },
             "dest": [
                 {
                     "type": "ShootSpread",
                     "shotDelay": 0,
-                    "shots": 3,
+                    "shots": 1,
                     "spread": 15
                   }
             ]
