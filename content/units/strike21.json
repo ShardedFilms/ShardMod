@@ -1,6 +1,6 @@
        {
-        "localizedName": "Blitz",
-        "description": "dodging bullets? think of bhm.",
+        "localizedName": "Clyle",
+        "description": "Double Snipers.",
         "research": {
         "requirements": [
         "silicon/20000"
@@ -10,7 +10,7 @@
           "speed": 2.8,
           "lowAltitude": true,
           "hitSize": 14,
-          "health": 240,
+          "health": 1000,
           "accel": 0.1,
           "faceTarget": true,
           "drag": 0.05,
@@ -37,72 +37,7 @@
               "radius": 16
               }],
           "weapons": [
-              {
-          "name": "shooter",
-          "reload": 30,
-          "mirror": false,
-          "x": 0,
-          "y": -1,
-          "shootY": 3,
-          "recoil": 2,
-          "shake": 1,
-          "rotate": true,
-          "shootSound": "shot-basic",
-          "shootCone": 45,
-          "shoot": {
-            "type": "ShootMulti",
-            "source": {
-                            "type": "ShootAlternate",
-                            "shotDelay": 9,
-                            "shots": 2,
-                            "spread": 0
-                          },
-            "dest": [
-                {
-                    "type": "ShootSpread",
-                    "shotDelay": 0,
-                    "shots": 13,
-                    "spread": 15
-                  }
-            ]
-        },
-          "bullet": {
-          "type": "BasicBulletType",
-          "width": 21,
-          "height": 18,
-          "sprite": "sharded-triarrow",
-          "frontColor": "ffffff",
-          "backColor": "ff69b4ff",
-          "lifetime": 180,
-          "speed": 3,
-          "damage": 81,
-          "collidesGround": false,
-          "shrinkY": 0,
-          "shrinkX": 0,
-          "powerDamageScl": 0.3,
-          "powerSclDecrease": 0.1,
-          "unitDamageScl": 0.3,
-          "statusDuration": 100,
-          "shootEffect": "none"
-          },
-          "hitEffect": {
-          "type": "ParticleEffect",
-          "line": true,
-          "particles": 7,
-          "lifetime": 20,
-          "offset": 50,
-          "length": 55,
-          "cone": -360,
-          "lenFrom": 6,
-          "lenTo": 0,
-          "colorFrom": "ffd37f",
-          "colorTo": "ffffff"
-          },
-          "trailColor": "ffd37f",
-          "trailParam": 6,
-          "trailLength": 0,
-          "trailWidth": 3
-          },
+              
           {
             "name": "shooter",
             "reload": 30,
@@ -112,14 +47,14 @@
             "shootY": 3,
             "recoil": 2,
             "shake": 1,
-            "rotate": true,
+            "rotate": false,
             "shootSound": "shot-basic",
             "shootCone": 45,
             "shoot": {
               "type": "ShootMulti",
               "source": {
                               "type": "ShootAlternate",
-                              "shotDelay": 9,
+                              "shotDelay": 4,
                               "shots": 2,
                               "spread": 0
                             },

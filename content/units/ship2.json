@@ -10,7 +10,7 @@
           "speed": 0.7,
           "lowAltitude": true,
           "hitSize": 72,
-          "health": 6000,
+          "health": 18000,
           "accel": 0.1,
           "createWreck" : true,
           "createScorch" : false,

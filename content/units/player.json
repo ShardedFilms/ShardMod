@@ -173,7 +173,7 @@
                   "homingPower": 0.3,
                   "homingRange": 1000,
                   "speed": 24,
-                  "damage": 240,
+                  "damage": 360,
                   "collidesGround": true,
                   "shrinkY": 0,
                   "shrinkX": 0,

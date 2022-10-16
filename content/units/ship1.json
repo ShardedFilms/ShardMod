@@ -10,7 +10,7 @@
           "speed": 0.9,
           "lowAltitude": true,
           "hitSize": 48,
-          "health": 700,
+          "health": 2100,
           "accel": 0.1,
           "faceTarget": true,
           "drag": 0.05,
