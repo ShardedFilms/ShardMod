@@ -12,6 +12,7 @@
       "hitSize": 144,
       "health": 36000,
       "accel": 0.1,
+      "circleTarget": true,      
       "createWreck" : true,
       "createScorch" : false,
       "faceTarget": true,
