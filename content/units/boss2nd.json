@@ -54,7 +54,7 @@
       "weapons": [
           {
       "name": "shooter",
-      "reload": 60,
+      "reload": 180,
       "mirror": true,
       "alternate": true,
       "x": 48,

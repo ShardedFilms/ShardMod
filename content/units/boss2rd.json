@@ -23,7 +23,7 @@
       "targetAir": true,
       "targetGround": false,
       "outlineColor": "00000000",
-      "rotateSpeed": 1,
+      "rotateSpeed": 10,
       "flying": true,
       "parts":[
         {
