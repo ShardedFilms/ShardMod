@@ -107,7 +107,7 @@
 
       {
         "name": "shooter",
-        "reload": 180,
+        "reload": 900,
         "mirror": false,
         "x": 0,
         "y": 4,
@@ -124,13 +124,13 @@
           "source": {
               "type": "ShootSpread",
               "shotDelay": 0,
-              "shots": 90,
-              "spread": 0.5
+              "shots": 45,
+              "spread": 0.125
             },
           "dest": [
               {
                   "type": "ShootSpread",
-                  "shotDelay": 60,
+                  "shotDelay": 300,
                   "shots": 3,
                   "spread": 0
                 }
