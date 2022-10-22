@@ -7,7 +7,7 @@
     ]
     },
     "type": "flying",
-      "speed": 0.80,
+      "speed": 1.5,
       "lowAltitude": true,
       "hitSize": 144,
       "health": 36000,
