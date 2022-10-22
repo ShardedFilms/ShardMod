@@ -78,7 +78,7 @@
                     "type": "ShootSpread",
                     "shotDelay": 0,
                     "shots": 5,
-                    "spread": 36
+                    "spread": 12
                   }
             ]
         },
