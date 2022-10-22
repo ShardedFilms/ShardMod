@@ -123,16 +123,16 @@
           "type": "ShootMulti",
           "source": {
               "type": "ShootSpread",
-              "shotDelay": 60,
-              "shots": 3,
-              "spread": 0
+              "shotDelay": 0,
+              "shots": 90,
+              "spread": 0.5
             },
           "dest": [
               {
                   "type": "ShootSpread",
-                  "shotDelay": 1,
-                  "shots": 90,
-                  "spread": 0.5
+                  "shotDelay": 60,
+                  "shots": 3,
+                  "spread": 0
                 }
           ]
       },
