@@ -122,14 +122,14 @@
             "shoot": {
               "type": "ShootMulti",
               "source": {
-                  "type": "ShootAlternate",
+                  "type": "ShootSpread",
                   "shotDelay": 3,
                   "shots": 12,
                   "spread": 0
                 },
               "dest": [
                   {
-                      "type": "ShootSpread",
+                      "type": "ShootAlternate",
                       "shotDelay": 0,
                       "shots": 36,
                       "spread": 1
