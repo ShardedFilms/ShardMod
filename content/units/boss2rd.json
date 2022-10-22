@@ -52,62 +52,9 @@
             "radius": 120
             }],
       "weapons": [
-          {
-      "name": "shooter",
-      "reload": 60,
-      "mirror": true,
-      "alternate": true,
-      "x": 48,
-      "y": 8,
-      "shootY": 3,
-      "recoil": 2,
-      "shake": 1,
-      "rotate": false,
-      "shootSound": "shot-basic",
-      "shootCone": 45,
-      "shoot": {
-        "type": "ShootMulti",
-        "source": {
-            "type": "ShootSpread",
-            "shotDelay": 1,
-            "shots":64,
-            "spread": 3
-          },
-        "dest": [
-            {
-                "type": "ShootSpread",
-                "shotDelay": 0,
-                "shots": 5,
-                "spread": 36
-              }
-        ]
-    },
-      "bullet": {
-      "type": "BasicBulletType",
-      "spin": 0,
-      "width": 14,
-      "height": 14,
-      "sprite": "sharded-plasma",
-      "frontColor": "ffffff",
-      "backColor": "3acb3e",
-      "lifetime": 480,
-      "hitSize": 6,
-      "speed": 2,
-      "damage": 81,
-      "collidesGround": false,
-      "shrinkY": 0,
-      "shrinkX": 0,
-      "powerDamageScl": 0.3,
-      "powerSclDecrease": 0.1,
-      "unitDamageScl": 0.3,
-      "statusDuration": 100,
-      "shootEffect": "none"
-      }
-      },
-
       {
         "name": "shooter",
-        "reload": 180,
+        "reload": 360,
         "mirror": false,
         "x": 0,
         "y": 4,
@@ -143,9 +90,9 @@
         "sprite": "sharded-plasma",
         "frontColor": "ffffff",
         "backColor": "06fe1b",
-        "lifetime": 240,
+        "lifetime": 480,
         "hitSize": 4,
-        "speed": 8,
+        "speed": 2,
         "damage": 81,
         "collidesGround": false,
         "shrinkY": 0,
@@ -156,6 +103,58 @@
         "statusDuration": 100,
         "shootEffect": "none"
         }
-        }
+        },
+        {
+            "name": "shooter",
+            "reload": 300,
+            "mirror": false,
+            "x": 0,
+            "y": 4,
+            "shootY": 3,
+            "recoil": 2,
+            "shake": 1,
+            "rotate": false,
+            "shootStatus": "none",
+            "shootStatusDuration": 48,
+            "shootSound": "shot-basic",
+            "shootCone": 45,
+            "shoot": {
+              "type": "ShootMulti",
+              "source": {
+                  "type": "ShootSpread",
+                  "shotDelay": 60,
+                  "shots": 3,
+                  "spread": 0
+                },
+              "dest": [
+                  {
+                      "type": "ShootAlternate",
+                      "shotDelay": 5,
+                      "shots": 45,
+                      "spread": 45
+                    }
+              ]
+          },
+            "bullet": {
+            "type": "BasicBulletType",
+            "width": 21,
+            "height": 18,
+            "sprite": "sharded-triarrow",
+            "frontColor": "ffffff",
+            "backColor": "06fe1b",
+            "lifetime": 480,
+            "hitSize": 4,
+            "speed": 2,
+            "damage": 81,
+            "collidesGround": false,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "powerDamageScl": 0.3,
+            "powerSclDecrease": 0.1,
+            "unitDamageScl": 0.3,
+            "statusDuration": 100,
+            "shootEffect": "none"
+            }
+            }
       ]
   }
