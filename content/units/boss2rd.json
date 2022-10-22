@@ -55,7 +55,7 @@
       "weapons": [
       {
         "name": "shooter",
-        "reload": 360,
+        "reload": 180,
         "mirror": false,
         "x": 0,
         "y": 4,
@@ -145,7 +145,7 @@
             "backColor": "06fe1b",
             "lifetime": 480,
             "hitSize": 4,
-            "speed": 2,
+            "speed": 4,
             "damage": 81,
             "collidesGround": false,
             "shrinkY": 0,
