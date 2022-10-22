@@ -7,7 +7,7 @@
         ]
         },
         "type": "flying",
-          "speed": 1.1,
+          "speed": 0.80,
           "lowAltitude": true,
           "hitSize": 144,
           "health": 36000,
@@ -20,7 +20,7 @@
           "engineSize": 0,
           "range": 640,
           "targetAir": true,
-          "tarrgetGround": false,
+          "targetGround": false,
           "outlineColor": "00000000",
           "rotateSpeed": 1,
           "flying": true,
@@ -69,8 +69,8 @@
             "type": "ShootMulti",
             "source": {
                 "type": "ShootSpread",
-                "shotDelay": 2,
-                "shots":16,
+                "shotDelay": 1,
+                "shots":64,
                 "spread": 3
               },
             "dest": [
@@ -89,10 +89,10 @@
           "height": 14,
           "sprite": "sharded-curve",
           "frontColor": "ffffff",
-          "backColor": "ff69b4ff",
-          "lifetime": 240,
+          "backColor": "3acb3e",
+          "lifetime": 480,
           "hitSize": 6,
-          "speed": 4,
+          "speed": 2,
           "damage": 81,
           "collidesGround": false,
           "shrinkY": 0,
