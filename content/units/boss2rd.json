@@ -70,16 +70,16 @@
           "type": "ShootMulti",
           "source": {
               "type": "ShootSpread",
-              "shotDelay": 10,
+              "shotDelay": 1,
               "shots": 36,
-              "spread": 0
+              "spread": 10
             },
           "dest": [
               {
                   "type": "ShootSpread",
-                  "shotDelay": 5,
+                  "shotDelay": 1,
                   "shots": 72,
-                  "spread": 4
+                  "spread": 15
                 }
           ]
       },
