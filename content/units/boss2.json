@@ -1,0 +1,279 @@
+ {
+        "localizedName": "Ultimatum Termina",
+        "description": "Destroyer of universes, Now is coming to destroy YOU",
+        "research": {
+        "requirements": [
+        "silicon/20000"
+        ]
+        },
+        "type": "flying",
+          "speed": 1.1,
+          "lowAltitude": true,
+          "hitSize": 144,
+          "health": 36000,
+          "accel": 0.1,
+          "createWreck" : true,
+          "createScorch" : false,
+          "faceTarget": true,
+          "drag": 0.08,
+          "engineOffset": 0,
+          "engineSize": 0,
+          "range": 640,
+          "targetAir": true,
+          "tarrgetGround": false,
+          "outlineColor": "00000000",
+          "rotateSpeed": 1,
+          "flying": true,
+          "parts":[
+            {
+              "type": "shapePart",
+              "hollow": true,
+              "circle": false,
+              "sides": 8,
+              "rotateSpeed": 2,
+              "layer": 110,
+              "color": "3acb3e",
+              "stroke": 6,
+              "strokeTo": 6,
+              "radiusTo": 110,
+              "radius": 120
+              },
+              {
+                "type": "shapePart",
+                "hollow": true,
+                "circle": false,
+                "sides": 7,
+                "rotateSpeed": -3,
+                "layer": 110,
+                "color": "05ff0d",
+                "stroke": 6,
+                "strokeTo": 6,
+                "radiusTo": 120,
+                "radius": 110
+                }],
+          "weapons": [
+              {
+          "name": "shooter",
+          "reload": 60,
+          "mirror": true,
+          "alternate": true,
+          "x": 48,
+          "y": 8,
+          "shootY": 3,
+          "recoil": 2,
+          "shake": 1,
+          "rotate": false,
+          "shootSound": "shot-basic",
+          "shootCone": 45,
+          "shoot": {
+            "type": "ShootMulti",
+            "source": {
+                "type": "ShootSpread",
+                "shotDelay": 2,
+                "shots":16,
+                "spread": 3
+              },
+            "dest": [
+                {
+                    "type": "ShootSpread",
+                    "shotDelay": 0,
+                    "shots": 5,
+                    "spread": 36
+                  }
+            ]
+        },
+          "bullet": {
+          "type": "BasicBulletType",
+          "spin": 0,
+          "width": 14,
+          "height": 14,
+          "sprite": "sharded-curve",
+          "frontColor": "ffffff",
+          "backColor": "ff69b4ff",
+          "lifetime": 240,
+          "hitSize": 6,
+          "speed": 4,
+          "damage": 81,
+          "collidesGround": false,
+          "shrinkY": 0,
+          "shrinkX": 0,
+          "powerDamageScl": 0.3,
+          "powerSclDecrease": 0.1,
+          "unitDamageScl": 0.3,
+          "statusDuration": 100,
+          "shootEffect": "none"
+          }
+          },
+
+          {
+            "name": "shooter",
+            "reload": 180,
+            "mirror": false,
+            "x": 0,
+            "y": 4,
+            "shootY": 3,
+            "recoil": 2,
+            "shake": 1,
+            "rotate": false,
+            "shootStatus": "unmoving",
+            "shootStatusDuration": 48,
+            "shootSound": "shot-basic",
+            "shootCone": 45,
+            "shoot": {
+              "type": "ShootMulti",
+              "source": {
+                  "type": "ShootAlternate",
+                  "shotDelay": 3,
+                  "shots": 12,
+                  "spread": 0
+                },
+              "dest": [
+                  {
+                      "type": "ShootSpread",
+                      "shotDelay": 0,
+                      "shots": 37,
+                      "spread": 5
+                    }
+              ]
+          },
+            "bullet": {
+            "type": "BasicBulletType",
+            "width": 21,
+            "height": 18,
+            "sprite": "sharded-triarrow",
+            "frontColor": "ffffff",
+            "backColor": "ff69b4ff",
+            "lifetime": 240,
+            "hitSize": 4,
+            "speed": 8,
+            "damage": 81,
+            "collidesGround": false,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "powerDamageScl": 0.3,
+            "powerSclDecrease": 0.1,
+            "unitDamageScl": 0.3,
+            "statusDuration": 100,
+            "shootEffect": "none"
+            }
+            },
+            {
+                "name": "shooter",
+                "reload": 200,
+                "alternate":false,
+                "mirror":false,
+                "baseRotation": -45,
+                "x": 60,
+                "y": 4,
+                "shootY": 3,
+                "recoil": 2,
+                "shake": 1,
+                "shootCone": 360,
+                "shootOnDeath": true,
+                "rotate": false,
+                "shootSound": "shockBlast",
+                "shoot": {
+                  "type": "ShootMulti",
+                  "source": {
+                      "type": "ShootAlternate",
+                      "shotDelay": 9,
+                      "shots": 5,
+                      "spread": 24,
+                      "barrels": 5
+                    },
+                  "dest": [
+                      {
+                          "type": "ShootSpread",
+                          "shotDelay": 0,
+                          "shots": 8,
+                          "spread": 22.5
+                        }
+                  ]
+              },
+                "bullet": {
+                "type": "BasicBulletType",
+                "width": 32,
+                "height": 32,
+                "sprite": "sharded-borb",
+                "frontColor": "ffffff",
+                "backColor": "ff69b4ff",
+                "lifetime": 240,
+                "hitSize": 18,
+                "speed": 6,
+                "damage": 243,
+                "collidesGround": false,
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "powerDamageScl": 0.3,
+                "powerSclDecrease": 0.1,
+                "unitDamageScl": 0.3,
+                "statusDuration": 100,
+                "shootEffect": "none"
+                }
+                },
+                {
+                    "name": "shooter",
+                    "reload": 200,
+                    "alternate":false,
+                    "baseRotation": 45,
+                    "x": -60,
+                    "y": 4,
+                    "shootY": 3,
+                    "recoil": 2,
+                    "mirror":false,
+                    "shake": 1,
+                    "shootCone": 360,
+                    "shootOnDeath": true,
+                    "rotate": false,
+                    "shootSound": "shockBlast",
+                    "shoot": {
+                      "type": "ShootMulti",
+                      "source": {
+                          "type": "ShootAlternate",
+                          "shotDelay": 9,
+                          "shots": 5,
+                          "spread": 24,
+                          "barrels": 5
+                        },
+                      "dest": [
+                          {
+                              "type": "ShootSpread",
+                              "shotDelay": 0,
+                              "shots": 8,
+                              "spread": 22.5
+                            }
+                      ]
+                  },
+                    "bullet": {
+                    "type": "BasicBulletType",
+                    "width": 32,
+                    "height": 32,
+                    "sprite": "sharded-borb",
+                    "frontColor": "ffffff",
+                    "backColor": "ff69b4ff",
+                    "lifetime": 240,
+                    "hitSize": 18,
+                    "speed": 6,
+                    "damage": 243,
+                    "collidesGround": false,
+                    "shrinkY": 0,
+                    "shrinkX": 0,
+                    "powerDamageScl": 0.3,
+                    "powerSclDecrease": 0.1,
+                    "unitDamageScl": 0.3,
+                    "statusDuration": 100,
+                    "shootEffect": "none"
+                    }
+                    }
+          
+          ],
+          "abilities":[
+            {
+            "type": "SpawnDeathAbility",
+            "unit": "boss1nd",
+            "faceOutwards":false,
+            "spread": 0,
+            "amount" : 1
+          }
+        ]
+      }
