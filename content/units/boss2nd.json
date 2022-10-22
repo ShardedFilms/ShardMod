@@ -115,7 +115,7 @@
         "recoil": 2,
         "shake": 1,
         "rotate": false,
-        "shootStatus": "unmoving",
+        "shootStatus": "none",
         "shootStatusDuration": 48,
         "shootSound": "shot-basic",
         "shootCone": 45,
@@ -123,16 +123,16 @@
           "type": "ShootMulti",
           "source": {
               "type": "ShootSpread",
-              "shotDelay": 3,
-              "shots": 12,
+              "shotDelay": 60,
+              "shots": 3,
               "spread": 0
             },
           "dest": [
               {
                   "type": "ShootSpread",
                   "shotDelay": 1,
-                  "shots": 36,
-                  "spread": 3
+                  "shots": 90,
+                  "spread": 0.5
                 }
           ]
       },
