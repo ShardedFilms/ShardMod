@@ -1,6 +1,6 @@
  {
         "localizedName": "Ultimatum Termina",
-        "description": "Destroyer of universes, Now is coming to destroy YOU",
+        "description": "Destroyer of universes, Now it is coming to destroy YOU",
         "research": {
         "requirements": [
         "silicon/20000"
@@ -87,7 +87,7 @@
           "spin": 0,
           "width": 14,
           "height": 14,
-          "sprite": "sharded-curve",
+          "sprite": "sharded-triarrow",
           "frontColor": "ffffff",
           "backColor": "3acb3e",
           "lifetime": 480,
@@ -129,10 +129,10 @@
                 },
               "dest": [
                   {
-                      "type": "ShootAlternate",
-                      "shotDelay": 0,
+                      "type": "ShootSpread",
+                      "shotDelay": 1,
                       "shots": 36,
-                      "spread": 1
+                      "spread": 3
                     }
               ]
           },
@@ -161,7 +161,7 @@
           "abilities":[
             {
             "type": "SpawnDeathAbility",
-            "unit": "boss1nd",
+            "unit": "boss2nd",
             "faceOutwards":false,
             "spread": 0,
             "amount" : 1
