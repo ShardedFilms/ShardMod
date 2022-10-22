@@ -70,8 +70,8 @@
         "source": {
             "type": "ShootSpread",
             "shotDelay": 1,
-            "shots":60,
-            "spread": 3
+            "shots":100,
+            "spread": 1
           },
         "dest": [
             {
