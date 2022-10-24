@@ -1,0 +1,161 @@
+{
+    "localizedName": "Ultimatum Termina Phase 3",
+    "description": "It will kill you at ANY cost",
+    "research": {
+    "requirements": [
+    "silicon/20000"
+    ]
+    },
+    "type": "flying",
+      "speed": 1.5,
+      "lowAltitude": true,
+      "hitSize": 144,
+      "health": 36000,
+      "accel": 0.1,
+      "circleTarget": true,      
+      "createWreck" : true,
+      "createScorch" : false,
+      "faceTarget": true,
+      "drag": 0.08,
+      "engineOffset": 0,
+      "engineSize": 0,
+      "range": 640,
+      "targetAir": true,
+      "targetGround": false,
+      "outlineColor": "00000000",
+      "rotateSpeed": 10,
+      "flying": true,
+      "parts":[
+        {
+          "type": "shapePart",
+          "hollow": true,
+          "circle": false,
+          "sides": 10,
+          "rotateSpeed": 10,
+          "layer": 110,
+          "color": "3acb3e",
+          "stroke": 6,
+          "strokeTo": 6,
+          "radiusTo": 120,
+          "radius": 120
+          },
+          {
+            "type": "shapePart",
+            "hollow": true,
+            "circle": false,
+            "sides": 12,
+            "rotateSpeed": -10,
+            "layer": 110,
+            "color": "05ff0d",
+            "stroke": 6,
+            "strokeTo": 6,
+            "radiusTo": 120,
+            "radius": 120
+            }],
+      "weapons": [
+      {
+        "name": "shooter",
+        "reload": 180,
+        "mirror": false,
+        "x": 0,
+        "y": 4,
+        "shootY": 3,
+        "recoil": 2,
+        "shake": 1,
+        "rotate": false,
+        "shootStatus": "none",
+        "shootStatusDuration": 48,
+        "shootSound": "shot-basic",
+        "shootCone": 45,
+        "shoot": {
+          "type": "ShootMulti",
+          "source": {
+              "type": "ShootSpread",
+              "shotDelay": 1,
+              "shots": 36,
+              "spread": 10
+            },
+          "dest": [
+              {
+                  "type": "ShootSpread",
+                  "shotDelay": 1,
+                  "shots": 72,
+                  "spread": 15
+                }
+          ]
+      },
+        "bullet": {
+        "type": "BasicBulletType",
+        "width": 21,
+        "height": 18,
+        "sprite": "sharded-plasma",
+        "frontColor": "ffffff",
+        "backColor": "06fe1b",
+        "lifetime": 480,
+        "hitSize": 4,
+        "speed": 2,
+        "damage": 81,
+        "collidesGround": false,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "powerDamageScl": 0.3,
+        "powerSclDecrease": 0.1,
+        "unitDamageScl": 0.3,
+        "statusDuration": 100,
+        "shootEffect": "none"
+        }
+        },
+        {
+            "name": "shooter",
+            "reload": 300,
+            "mirror": false,
+            "x": 0,
+            "y": 4,
+            "shootY": 3,
+            "recoil": 2,
+            "shake": 1,
+            "rotate": false,
+            "shootStatus": "none",
+            "shootStatusDuration": 48,
+            "shootSound": "shot-basic",
+            "shootCone": 45,
+            "shoot": {
+              "type": "ShootMulti",
+              "source": {
+                  "type": "ShootSpread",
+                  "shotDelay": 0,
+                  "shots": 1,
+                  "spread": 0
+                },
+              "dest": [
+                  {
+                      "type": "ShootAlternate",
+                      "shotDelay": 5,
+                      "shots": 45,
+                      "spread": 45
+                    }
+              ]
+          },
+            "bullet": {
+            "type": "BasicBulletType",
+            "width": 21,
+            "height": 18,
+            "sprite": "sharded-triarrow",
+            "frontColor": "ffffff",
+            "backColor": "06fe1b",
+            "lifetime": 480,
+            "hitSize": 4,
+            "speed": 4,
+            "damage": 81,
+            "collidesGround": false,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "powerDamageScl": 0.3,
+            "powerSclDecrease": 0.1,
+            "unitDamageScl": 0.3,
+            "statusDuration": 100,
+            "shootEffect": "none"
+            }
+            }
+      ]
+  }
