@@ -32,11 +32,11 @@
               "sides": 8,
               "rotateSpeed": 2,
               "layer": 110,
-              "color": "3acb3e",
+              "color": "3acb3eaa",
               "stroke": 6,
               "strokeTo": 6,
               "radiusTo": 110,
-              "radius": 120
+              "radius": 110
               },
               {
                 "type": "shapePart",
@@ -45,10 +45,10 @@
                 "sides": 7,
                 "rotateSpeed": -3,
                 "layer": 110,
-                "color": "05ff0d",
+                "color": "05ff0daa",
                 "stroke": 6,
                 "strokeTo": 6,
-                "radiusTo": 120,
+                "radiusTo": 110,
                 "radius": 110
                 }],
           "weapons": [
@@ -89,7 +89,7 @@
           "height": 14,
           "sprite": "sharded-triarrow",
           "frontColor": "ffffff",
-          "backColor": "3acb3e",
+          "backColor": "ff00ff",
           "lifetime": 480,
           "hitSize": 6,
           "speed": 2,
@@ -140,7 +140,7 @@
             "type": "BasicBulletType",
             "width": 21,
             "height": 18,
-            "sprite": "sharded-plasma",
+            "sprite": "sharded-ball",
             "frontColor": "ffffff",
             "backColor": "06fe1b",
             "lifetime": 240,
