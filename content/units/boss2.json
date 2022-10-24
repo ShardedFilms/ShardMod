@@ -29,7 +29,7 @@
               "type": "shapePart",
               "hollow": true,
               "circle": false,
-              "sides": 8,
+              "sides": 6,
               "rotateSpeed": 2,
               "layer": 110,
               "color": "3acb3eaa",
@@ -42,7 +42,7 @@
                 "type": "shapePart",
                 "hollow": true,
                 "circle": false,
-                "sides": 7,
+                "sides": 6,
                 "rotateSpeed": -3,
                 "layer": 110,
                 "color": "05ff0daa",
@@ -69,16 +69,16 @@
             "type": "ShootMulti",
             "source": {
                 "type": "ShootSpread",
-                "shotDelay": 1,
-                "shots":64,
-                "spread": 3
+                "shotDelay": 18,
+                "shots": 4,
+                "spread": 0
               },
             "dest": [
                 {
                     "type": "ShootSpread",
                     "shotDelay": 0,
-                    "shots": 5,
-                    "spread": 12
+                    "shots": 19,
+                    "spread": 10
                   }
             ]
         },
@@ -86,23 +86,50 @@
           "type": "BasicBulletType",
           "spin": 0,
           "width": 14,
-          "height": 14,
+          "height": 28,
           "sprite": "sharded-triarrow",
           "frontColor": "ffffff",
           "backColor": "ff00ff",
-          "lifetime": 480,
+          "lifetime": 7,
           "hitSize": 6,
-          "speed": 2,
+          "speed": 9,
           "damage": 81,
           "collidesGround": false,
           "keepVelocity": false,
-          "shrinkY": 0,
+          "shrinkY": 0.5,
           "shrinkX": 0,
           "powerDamageScl": 0.3,
           "powerSclDecrease": 0.1,
           "unitDamageScl": 0.3,
           "statusDuration": 100,
-          "shootEffect": "none"
+          "shootEffect": "none",
+          "despawnEffect": "none",
+          "despawnHit": true,
+          "fragRandomSpread": 0,
+          "fragBullets": 1,
+          "fragVelocityMin": 1,
+          "fragBullet":{
+            "type": "BasicBulletType",
+            "spin": 0,
+            "width": 14,
+            "height": 14,
+            "sprite": "sharded-triarrow",
+            "frontColor": "ffffff",
+            "backColor": "ff00ff",
+            "lifetime": 240,
+            "hitSize": 6,
+            "speed": 3,
+            "damage": 81,
+            "collidesGround": false,
+            "keepVelocity": false,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "powerDamageScl": 0.3,
+            "powerSclDecrease": 0.1,
+            "unitDamageScl": 0.3,
+            "statusDuration": 100,
+            "shootEffect": "none" 
+            }        
           }
           },
 
@@ -125,15 +152,15 @@
               "source": {
                   "type": "ShootSpread",
                   "shotDelay": 3,
-                  "shots": 12,
+                  "shots": 2,
                   "spread": 0
                 },
               "dest": [
                   {
                       "type": "ShootSpread",
                       "shotDelay": 1,
-                      "shots": 36,
-                      "spread": 3
+                      "shots": 109,
+                      "spread": 5
                     }
               ]
           },
@@ -146,6 +173,7 @@
             "backColor": "ff00ff",
             "lifetime": 240,
             "spin": 3,
+            "rotationOffset": 0,
             "hitSize": 4,
             "speed": 8,
             "damage": 81,
