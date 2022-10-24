@@ -142,7 +142,7 @@
             "height": 18,
             "sprite": "sharded-ball",
             "frontColor": "ffffff",
-            "backColor": "",
+            "backColor": "ff00ff",
             "lifetime": 240,
             "hitSize": 4,
             "speed": 8,
