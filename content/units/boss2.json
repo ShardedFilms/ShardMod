@@ -94,6 +94,7 @@
           "hitSize": 6,
           "speed": 9,
           "damage": 81,
+          "range": 640,
           "collidesGround": false,
           "keepVelocity": false,
           "shrinkY": 0.5,
