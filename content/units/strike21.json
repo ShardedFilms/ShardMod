@@ -9,6 +9,7 @@
         "type": "flying",
           "speed": 2.8,
           "lowAltitude": true,
+          "aimDst": 800
           "hitSize": 14,
           "health": 1000,
           "accel": 0.1,
