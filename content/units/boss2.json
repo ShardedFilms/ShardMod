@@ -43,7 +43,7 @@
                 "hollow": true,
                 "circle": false,
                 "sides": 6,
-                "rotateSpeed": -3,
+                "rotateSpeed": -2,
                 "layer": 110,
                 "color": "05ff0daa",
                 "stroke": 6,
