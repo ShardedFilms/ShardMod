@@ -54,7 +54,7 @@
           "weapons": [
               {
           "name": "shooter",
-          "reload": 60,
+          "reload": 90,
           "mirror": true,
           "alternate": true,
           "x": 48,
@@ -86,13 +86,13 @@
           "type": "BasicBulletType",
           "spin": 0,
           "width": 14,
-          "height": 28,
+          "height": 42,
           "sprite": "sharded-triarrow",
           "frontColor": "ffffff",
           "backColor": "ff00ff",
-          "lifetime": 7,
+          "lifetime": 9,
           "hitSize": 6,
-          "speed": 9,
+          "speed": 8,
           "damage": 81,
           "range": 640,
           "maxRange": 640,
@@ -120,7 +120,7 @@
             "backColor": "ff00ff",
             "lifetime": 240,
             "hitSize": 6,
-            "speed": 3,
+            "speed": 4,
             "damage": 81,
             "collidesGround": false,
             "keepVelocity": false,
@@ -137,7 +137,7 @@
 
           {
             "name": "shooter",
-            "reload": 180,
+            "reload": 240,
             "mirror": false,
             "x": 0,
             "y": 4,
@@ -153,8 +153,8 @@
               "type": "ShootMulti",
               "source": {
                   "type": "ShootSpread",
-                  "shotDelay": 3,
-                  "shots": 2,
+                  "shotDelay": 4,
+                  "shots": 1,
                   "spread": 0
                 },
               "dest": [
@@ -177,7 +177,7 @@
             "spin": 3,
             "rotationOffset": 0,
             "hitSize": 4,
-            "speed": 8,
+            "speed": 6,
             "damage": 81,
             "keepVelocity": false,
             "collidesGround": false,
