@@ -95,6 +95,7 @@
           "speed": 9,
           "damage": 81,
           "range": 640,
+          "maxRange": 640,
           "collidesGround": false,
           "keepVelocity": false,
           "shrinkY": 0.5,
