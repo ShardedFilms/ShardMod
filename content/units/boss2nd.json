@@ -124,7 +124,7 @@
           "type": "ShootMulti",
           "source": {
               "type": "ShootSpread",
-              "shotDelay": 1,
+              "shotDelay": 0,
               "shots": 19,
               "spread": 10
             },
@@ -144,7 +144,7 @@
         "sprite": "sharded-triarrow",
         "frontColor": "ffffff",
         "backColor": "ff00ff",
-        "lifetime": 240,
+        "lifetime": 30,
         "hitSize": 4,
         "speed": 4,
         "keepVelocity": false,
