@@ -160,6 +160,7 @@
         "fragRandomSpread": 0,
         "fragSpread":10,
         "fragBullets":2,
+        "fragVelocityMin": 1,
         "fragBullet": {
           "type": "BasicBulletType",
           "width": 18,

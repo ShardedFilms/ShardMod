@@ -98,7 +98,7 @@
           "maxRange": 640,
           "collidesGround": false,
           "keepVelocity": false,
-          "shrinkY": 0.5,
+          "shrinkY": 0.75,
           "shrinkX": 0,
           "powerDamageScl": 0.3,
           "powerSclDecrease": 0.1,
@@ -134,6 +134,72 @@
             }        
           }
           },
+          {
+            "name": "shooter",
+            "reload": 80,
+            "mirror": true,
+            "alternate": true,
+            "x": 48,
+            "y": 8,
+            "shootY": 3,
+            "recoil": 2,
+            "shake": 1,
+            "rotate": false,
+            "shootSound": "shot-basic",
+            "shootCone": 45,
+            "shoot": {
+              "type": "ShootMulti",
+              "firstShotDelay": 160,
+              "source": {
+                  "type": "ShootSpread",
+                  "shotDelay": 8,
+                  "shots": 10,
+                  "spread": 6
+                },
+              "dest": [
+                  {
+                      "type": "ShootSpread",
+                      "shotDelay": 0,
+                      "shots": 3,
+                      "spread": 60
+                    },
+                    {
+                      "type": "ShootSpread",
+                      "shotDelay": 0,
+                      "shots": 5,
+                      "spread": 6
+                    }
+              ]
+          },
+            "bullet": {
+            "type": "BasicBulletType",
+            "spin": 0,
+            "width": 14,
+            "height": 18,
+            "sprite": "sharded-droplet",
+            "frontColor": "ffffff",
+            "backColor": "ff00ff",
+            "lifetime": 9,
+            "hitSize": 6,
+            "speed": 5,
+            "damage": 81,
+            "range": 640,
+            "maxRange": 640,
+            "collidesGround": false,
+            "keepVelocity": false,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "powerDamageScl": 0.3,
+            "powerSclDecrease": 0.1,
+            "unitDamageScl": 0.3,
+            "statusDuration": 100,
+            "shootEffect": "none",
+            "despawnEffect": "none",
+            "despawnHit": true,
+            "fragRandomSpread": 0
+            }
+            },
+  
 
           {
             "name": "shooter",
