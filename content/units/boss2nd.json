@@ -158,8 +158,8 @@
         "statusDuration": 100,
         "shootEffect": "none",
         "fragRandomSpread": 0,
-        "fragSpread":10,
-        "fragBullets":2,
+        "fragSpread":20,
+        "fragBullets":4,
         "fragVelocityMin": 1,
         "fragBullet": {
           "type": "BasicBulletType",
