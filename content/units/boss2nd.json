@@ -86,14 +86,14 @@
       "bullet": {
       "type": "BasicBulletType",
       "spin": 0,
-      "width": 14,
-      "height": 14,
+      "width": 24,
+      "height": 24,
       "sprite": "sharded-ball",
       "frontColor": "ffffff",
       "backColor": "ff00ff",
       "lifetime": 480,
       "hitSize": 6,
-      "speed": 8,
+      "speed": 6,
       "damage": 81,
       "collidesGround": false,
       "shrinkY": 0,
@@ -108,7 +108,7 @@
 
       {
         "name": "shooter",
-        "reload": 150,
+        "reload": 180,
         "mirror": false,
         "x": 0,
         "y": 4,
@@ -160,7 +160,7 @@
         "range": 640,
         "maxRange": 640,
         "fragRandomSpread": 0,
-        "fragSpread":22.5,
+        "fragSpread":45,
         "fragBullets":8,
         "fragVelocityMin": 1,
         "fragBullet": {
