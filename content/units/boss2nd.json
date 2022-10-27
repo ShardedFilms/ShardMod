@@ -139,8 +139,8 @@
       },
         "bullet": {
         "type": "BasicBulletType",
-        "width": 18,
-        "height": 21,
+        "width": 21,
+        "height": 18,
         "sprite": "sharded-triarrow",
         "frontColor": "ffffff",
         "backColor": "ff00ff",
@@ -165,8 +165,8 @@
         "fragVelocityMin": 1,
         "fragBullet": {
           "type": "BasicBulletType",
-          "width": 18,
-          "height": 21,
+          "width": 21,
+          "height": 18,
           "sprite": "sharded-triarrow",
           "frontColor": "ffffff",
           "backColor": "0000ff",
