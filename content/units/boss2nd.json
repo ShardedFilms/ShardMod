@@ -85,7 +85,8 @@
     },
       "bullet": {
       "type": "BasicBulletType",
-      "spin": 0,
+      "spin": 3,
+      "rotationOffset": 0,
       "width": 24,
       "height": 24,
       "sprite": "sharded-ball",
