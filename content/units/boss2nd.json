@@ -30,12 +30,12 @@
           "type": "shapePart",
           "hollow": true,
           "circle": false,
-          "sides": 8,
+          "sides": 6,
           "rotateSpeed": 4,
           "layer": 110,
           "color": "3acb3e",
           "stroke": 6,
-          "strokeTo": 3,
+          "strokeTo": 6,
           "radiusTo": 120,
           "radius": 120
           },
@@ -43,12 +43,12 @@
             "type": "shapePart",
             "hollow": true,
             "circle": false,
-            "sides": 7,
-            "rotateSpeed": -6,
+            "sides": 6,
+            "rotateSpeed": -4,
             "layer": 110,
             "color": "05ff0d",
             "stroke": 6,
-            "strokeTo": 3,
+            "strokeTo": 6,
             "radiusTo": 120,
             "radius": 120
             }],
@@ -70,16 +70,16 @@
         "type": "ShootMulti",
         "source": {
             "type": "ShootSpread",
-            "shotDelay": 1,
-            "shots":100,
-            "spread": 1
+            "shotDelay": 9,
+            "shots":20,
+            "spread": 0
           },
         "dest": [
             {
                 "type": "ShootSpread",
-                "shotDelay": 1,
-                "shots": 10,
-                "spread": 36
+                "shotDelay": 0,
+                "shots": 6,
+                "spread": 10
               }
         ]
     },
@@ -88,12 +88,12 @@
       "spin": 0,
       "width": 14,
       "height": 14,
-      "sprite": "sharded-triarrow",
+      "sprite": "sharded-ball",
       "frontColor": "ffffff",
-      "backColor": "3acb3e",
+      "backColor": "ff00ff",
       "lifetime": 480,
       "hitSize": 6,
-      "speed": 2,
+      "speed": 8,
       "damage": 81,
       "collidesGround": false,
       "shrinkY": 0,
@@ -108,7 +108,7 @@
 
       {
         "name": "shooter",
-        "reload": 900,
+        "reload": 150,
         "mirror": false,
         "x": 0,
         "y": 4,
@@ -157,9 +157,11 @@
         "unitDamageScl": 0.3,
         "statusDuration": 100,
         "shootEffect": "none",
+        "range": 640,
+        "maxRange": 640,
         "fragRandomSpread": 0,
-        "fragSpread":20,
-        "fragBullets":4,
+        "fragSpread":22.5,
+        "fragBullets":8,
         "fragVelocityMin": 1,
         "fragBullet": {
           "type": "BasicBulletType",

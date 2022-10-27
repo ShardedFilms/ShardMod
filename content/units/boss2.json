@@ -139,8 +139,8 @@
             "reload": 80,
             "mirror": true,
             "alternate": true,
-            "x": 48,
-            "y": 8,
+            "x": 40,
+            "y": 20,
             "shootY": 3,
             "recoil": 2,
             "shake": 1,
@@ -153,8 +153,8 @@
               "source": {
                   "type": "ShootSpread",
                   "shotDelay": 8,
-                  "shots": 10,
-                  "spread": 6
+                  "shots": 30,
+                  "spread": 3
                 },
               "dest": [
                 {
@@ -181,8 +181,8 @@
             "bullet": {
             "type": "BasicBulletType",
             "spin": 0,
-            "width": 14,
-            "height": 18,
+            "width": 8,
+            "height": 12,
             "sprite": "sharded-droplet",
             "frontColor": "ffffff",
             "backColor": "ff00ff",
