@@ -80,7 +80,7 @@
                     "type": "ShootSpread",
                     "shotDelay": 0,
                     "shots": 2,
-                    "spread": 10
+                    "spread": 9
                   }
             ]
         },
