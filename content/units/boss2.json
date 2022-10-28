@@ -170,8 +170,8 @@
                     {
                       "type": "ShootSpread",
                       "shotDelay": 0,
-                      "shots": 10,
-                      "spread": 3
+                      "shots": 9,
+                      "spread": 1
                     }
                   ]
               }
