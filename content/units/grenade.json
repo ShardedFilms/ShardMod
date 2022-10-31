@@ -1,0 +1,64 @@
+{
+    "type": "missile",
+    "localizedName": "Grenade",
+    "description": "the cruxians knows a second type of launch pads that not used distribute resources to another base, but they used as offensive weaponary to send a bomb to dominate Sharded's base. \n\n [red]Destyoy it before it's reach it's target.",
+     "controller": "MissileAI",
+    "lowAltitude": true,
+    "speed": 6,
+    "rotateSpeed": 1,
+    "lifetime": 230,
+     "isEnemy": false,
+    "allowedInPayloads": false,
+    "playerControllable": false,
+    "physics": false,
+    "deathEffect": "none",
+    "useUnitCap": false,
+    "createWreck": false,
+    "createScorch": false,
+    "flying": true,
+    "hidden": true,
+    "loopSound": "missileTrail",
+    "loopSoundVolume": 0.5,
+    "health": 70,
+    "hitSize": 7,
+    "engineLayer": 110,
+    "trailColor": "e58956",
+    "missileAccelTime": 30,
+    "engineOffset": 10,
+    "engineSize": 5,
+    "drawCell": false,
+    "maxRange": 10,
+    "trailLength": 22,
+    "weapons": [
+   {
+"name": "bomb",
+"shootCone": 360,
+"shootOnDeath": false,
+"controllable": true,
+"shootSound": "largeExplosion",
+"bullet": {
+    "type": "BombBulletType",
+    "lifetime": 1,
+    "shootEffect": "titanExplosion",
+    "speed": 0,
+    "splashDamageRadius": 48,
+    "instantDisappear": true,
+    "splashDamage": 130,
+    "status" : "blasted",
+    "killShooter": true,
+    "hittable": false,
+    "collidesAir": true
+     }
+}
+],
+"abilities": [
+{
+"type": "MoveEffectAbility",
+"effect": "fireHit",
+"interval": 3,
+"y": -4,
+"rotateEffect": true,
+"rotation": 180
+}
+]
+}
