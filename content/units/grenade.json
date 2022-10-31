@@ -39,7 +39,8 @@
 "bullet": {
     "type": "BombBulletType",
     "lifetime": 1,
-    "shootEffect": "titanExplosion",
+        "hitColor": "e58956",
+    "hitEffect": "titanExplosion",
     "speed": 0,
     "splashDamageRadius": 48,
     "instantDisappear": true,
